@@ -1,11 +1,13 @@
 import scrapy
 from  scrape_mgm.items import Bolge, turkey_cities, hafta_gunleri
 from scrapy_splash import SplashRequest
+from urllib.parse import urlencode
+
 
 #https://www.mgm.gov.tr/?il=Istanbul
 #https://www.ventusky.com//?p=39.4;34.1;5&l=temperature-2m
 
-#SCRAPEOPS_API_KEY = "bdedab60-23c0-40b7-b0d8-234dc5d68e63"
+SCRAPEOPS_API_KEY = "bdedab60-23c0-40b7-b0d8-234dc5d68e63"
 
 
 class MgmSpySpider(scrapy.Spider):
@@ -16,20 +18,25 @@ class MgmSpySpider(scrapy.Spider):
             assert(splash:go(args.url))
             assert(splash:wait(5))
             splash:set_viewport_full()
+            
+            
             return {
               html = splash:html()
             }
         end
     '''
+
     
     
     def start_requests(self):
         
         for i in turkey_cities:
             city_url = "https://www.mgm.gov.tr/" + f"?il={i}"
+            #payload = {'api_key': SCRAPEOPS_API_KEY, 'url': city_url}
+            #proxy_url = 'https://proxy.scrapeops.io/v1/?' + urlencode(payload)
             yield SplashRequest(url=city_url, callback=self.parse, 
-                            endpoint='execute', args={'wait' : 1,'lua_source': self.lua_script, 'url' : city_url,}) 
-                                                      #'proxy': f'http://scrapeops:{SCRAPEOPS_API_KEY}@proxy.scrapeops.io:5353'})
+                            endpoint='execute', args={'wait' : 1,'lua_source': self.lua_script})
+                                                      #'proxy': proxy_url})
 
     def parse(self, response):
         
@@ -67,18 +74,19 @@ class MgmSpySpider(scrapy.Spider):
                 gun_adi = " "
         
         
+        
         sehir = Bolge()
         
-        sehir["bolge_adi"] = bolge_adi
+        sehir["bolge_adi"] = bolge_adi.upper()
         sehir["gun_adi"] = gun_adi
         sehir["c_sicaklik"] = c_temp
         sehir["tarih"] = gun_zaman
         sehir["hava_durumu"] = hava_durumu
-        sehir["max_sicaklik"] = max_temp
-        sehir["min_sicaklik"] = min_temp
         sehir["basinc"] = basinc
         sehir["ruzgar"] = ruzgar
         sehir["nem"] = nem
+        sehir["max_sicaklik"] = max_temp
+        sehir["min_sicaklik"] = min_temp
         
         sehir["ft_name"] = ft_name	
         sehir["ft_max_sicaklik"] = ft_max_sicaklik
@@ -94,11 +102,24 @@ class MgmSpySpider(scrapy.Spider):
         sehir["st_max_nem"] = st_max_nem
         sehir["st_min_nem"] = st_min_nem
 
-        
-        
+
+
         yield sehir
-            
-    # def parse_city(self, response):
-    #     print(response.url)
+        #yield SplashRequest(url="https://www.mgm.gov.tr/tahmin/gunluk-tahmin.aspx", callback=self.parse_gunluk, 
+        #                    endpoint='execute', args={'wait' : 1,'lua_source': self.lua_script})
         
         
+    # def parse_gunluk(self, response):
+    #     print("###############################")
+        
+    #     #sehir = response.meta["sehir"]
+    #     #bolge_adi = response.meta["city"]
+    #     #
+    #     #city = response.xpath(f'//h4[contains(text(), "{bolge_adi}")]/span')
+    #     #max_temp = city.css("span.renkMin::text").get()
+    #     #min_temp = city.xpath('span.renkMax::text').get() 
+    #     #
+    #     #sehir["max_sicaklik"] = max_temp
+    #     #sehir["min_sicaklik"] = min_temp
+        
+    #     yield "sehir"

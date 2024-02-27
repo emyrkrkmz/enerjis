@@ -1,2 +1,69 @@
-Humidity,Clouds,Cloud base
-,,
+Air_pressure,City_name,Cloud_base,Clouds,Humidity,Precipitation,Temperature,Visibility,Wind
+,Edirne,,,,,,,
+,Diyarbakır,,,,,1 °C,,5 km/h
+,Trabzon,,,,,9 °C,,17 km/h
+,Eskişehir,,50 %,71 %,,9 °C,,9 km/h
+,Kayseri,,,,,3 °C,,9 km/h
+1022 hPa,Samsun,,,,,10 °C,10 km,0 km/h
+1019 hPa,Mersin,,,,,14 °C,20 km,2 km/h
+,Gaziantep,,,,,3 °C,,7 km/h
+,Konya,,,,,7 °C,,11 km/h
+1019 hPa,Antalya,,,,,15 °C,10 km,2 km/h
+1021 hPa,Bursa,,,,,9 °C,7 km,4 km/h
+,İstanbul,,,,,9 °C,,9 km/h
+,Ankara,,,,,11 °C,20 km,2 km/h
+1020 hPa,İzmir,,,,,13 °C,20 km,2 km/h
+,Şanlıurfa,,,,,5 °C,,11 km/h
+,Denizli,,,,,,,
+,Malatya,,,,0 mm,4 °C,10 km,8 km/h
+,Izmit,,,100 %,,2 °C,,4 km/h
+,Mardin,,,,0 mm,4 °C,20 km,11 km/h
+,Van,,30 %,42 %,,-6 °C,,7 km/h
+,Erzurum,,,,,-4 °C,20 km,2 km/h
+,Sivas,,,,,-2 °C,,7 km/h
+1020 hPa,Manisa,,,,,12 °C,20 km,2 km/h
+,Adıyaman,,,,0 mm,8 °C,,
+,Kütahya,,,,,,,
+,Balıkesir,,,,,8 °C,,0 km/h
+,Adana,,,,,10 °C,,4 km/h
+,Aydın,,,,,12 °C,,9 km/h
+,Çorum,,,,,,,
+,Uşak,,,,,,,
+1021 hPa,Bolu,,40 %,,0 mm,5 °C,20 km,0 km/h
+,Tekirdağ,,,,,7 °C,,15 km/h
+1023 hPa,Giresun,,80 %,,,9 °C,20 km,2 km/h
+1021 hPa,Ordu,,,,0 mm,8 °C,20 km,5 km/h
+,Kırıkkale,,30 %,,0 mm,11 °C,20 km,4 km/h
+,Nevşehir,,30 %,,0 mm,7 °C,20 km,4 km/h
+,Ağrı,,,,0 mm,-5 °C,,
+,Kars,,,,,-10 °C,,5 km/h
+1022 hPa,Yalova,,,,0 mm,9 °C,,
+1021 hPa,Zonguldak,,90 %,,0 mm,8 °C,20 km,2 km/h
+1020 hPa,Kırklareli,,,,0 mm,12 °C,20 km,2 km/h
+,Çanakkale,,,,,8 °C,,9 km/h
+1020 hPa,Rize,,,,0 mm,6 °C,20 km,2 km/h
+1019 hPa,Bilecik,,,,0 mm,7 °C,8 km,4 km/h
+,Sinop,,,,,,,
+,Artvin,,,,0 mm,8 °C,20 km,2 km/h
+1021 hPa,Bartın,,90 %,,0 mm,9 °C,20 km,2 km/h
+,Ardahan,,,,,,,
+,Yozgat,,,,,3 °C,15 km,2 km/h
+,Karabük,,,,,,,
+,Karaman,,,,,7 °C,,
+1019 hPa,Osmaniye,,,,0 mm,10 °C,20 km,4 km/h
+,Kilis,,,,0 mm,7 °C,,
+,Niğde,,,,,,,
+,Aksaray,,80 %,,0 mm,10 °C,25 km,0 km/h
+,Batman,,,,,5 °C,,0 km/h
+,Iğdır,,,,0 mm,-1 °C,,
+1021 hPa,Düzce,,40 %,,0 mm,9 °C,20 km,0 km/h
+,Kırşehir,,,,,,,
+,Bingöl,,,,,,,
+,Bayburt,,,,0 mm,-2 °C,20 km,4 km/h
+,Çankırı,,60 %,,0 mm,13 °C,15 km,2 km/h
+,Erzincan,,,,,,,
+,Siirt,,,,,,,
+,Bitlis,,,,,,,
+,Muş,,,,0 mm,-0 °C,,
+,Şırnak,,,,,0 °C,,15 km/h
+,Hakkâri,,50 %,61 %,,-10 °C,7 km,9 km/h

@@ -22,28 +22,68 @@ class VeturspySpider(scrapy.Spider):
     
     
     def start_requests(self):
-        yield SplashRequest(url="https://ventusky.com/istanbul", callback=self.parse, 
-                            endpoint='execute', args={'wait' : 1,'lua_source': self.lua_script, 'url' : "https://ventusky.com/istanbul"})
+        for i in turkey_cities_lowercase:
+            yield SplashRequest(url=f"https://ventusky.com/{i}", callback=self.parse, 
+                            endpoint='execute', args={'wait' : 1,'lua_source': self.lua_script})
 
 
     def parse(self, response):
-        istanbul = CityItem()
-        all_tables = response.xpath('//table')
+        city = CityItem()
         
-        mini_table = all_tables[1]
+        ##First part
+        mid_table = response.css("div#actual > div > div:nth-child(3) > table > tbody")
         
-        
-        #istanbul["precipitation"] = mini_table.xpath('.//tr[1]/td[2]/b/text()').get()
-        #istanbul["air_pressure"] = mini_table.xpath('.//tr[2]/td[2]/b/text()').get()
-        #istanbul["visibility"] = mini_table.xpath('.//tr[3]/td[2]/b/text()').get()
-        #istanbul['clouds'] = mini_table.xpath('.//tr[4]/td[2]/b/text()').get()
-        #istanbul['cloud_base'] = mini_table.xpath('.//tr[5]/td[2]/b/text()').get()
-        #istanbul['wind_speed'] = mini_table.xpath('.//tr[6]/td[2]/b/text()').get()
-        Humidity = mini_table.xpath('.//tr[1]/td[2]/b/text()').get()
-        print(Humidity)
-        yield {
-            'Humidity': mini_table.xpath('.//tr[1]/td[2]/b/text()').get(),
-            'Clouds': mini_table.xpath('.//tr[2]/td[2]/b/text()').get(),
-            'Cloud base': mini_table.xpath('.//tr[3]/td[2]/b/text()').get(),
-        }
+        if mid_table != None:
+            city_name = response.css('div.header_background > h1::text').get().strip()
 
+            temperature = response.css('td.temperature::text').get()
+            wind = response.css('b.wind_ico::text').get()
+            
+            if temperature != None:
+                city["Temperature"] = temperature.strip()
+
+            if wind != None:
+                city['Wind'] = wind.strip()
+            
+            city["City_name"] = city_name
+            
+            #midd = mid_table
+            trss = len(mid_table.css('tr'))
+            for i in range(1 , trss):
+                prop = mid_table.css(f'tr:nth-child({i}) > td:nth-child(1)::text').get()
+                value = mid_table.css(f'tr:nth-child({i}) > td:nth-child(2) > b::text').get()
+                
+                
+                if prop == None:
+                    continue
+                
+                prop.strip()
+                
+                
+                if "Precipitation" in prop:
+                    prop = "Precipitation"
+                if "Cloud base" in prop:
+                    prop = "Cloud_base"
+                if 'Air pressure' in prop:
+                    prop = 'Air_pressure'
+                if 'Humidity' in prop:
+                    prop = 'Humidity'
+                if 'Visibility' in prop:
+                    prop = 'Visibility'
+                if 'Clouds' in prop:
+                    prop = 'Clouds'
+                
+
+                city[prop] = value.strip()
+                
+            
+        ##Second part
+        product = response.css("div.section_grey table")
+        
+        
+                
+        
+
+
+        
+        yield city

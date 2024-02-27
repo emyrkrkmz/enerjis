@@ -27,8 +27,12 @@ DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 #SCRAPEOPS_API_KEY = "bdedab60-23c0-40b7-b0d8-234dc5d68e63"
 #SCRAPEOPS_PROXY_ENABLED = True
 
+
 #SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = 'https://headers.scrapeops.io/v1/user-agents'
 #SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
+
+
+
 
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)

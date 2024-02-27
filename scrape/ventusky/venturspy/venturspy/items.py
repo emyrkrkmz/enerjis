@@ -6,14 +6,19 @@
 import scrapy
 
 class CityItem(scrapy.Item):
-    city_name = scrapy.Field()
-    precipitation = scrapy.Field()
-    air_pressure = scrapy.Field()
-    visibility = scrapy.Field()
-    clouds = scrapy.Field()
-    cloud_base = scrapy.Field()
-    wind = scrapy.Field()
+    City_name = scrapy.Field()
+    Precipitation = scrapy.Field()
+    Air_pressure = scrapy.Field()
+    Visibility = scrapy.Field()
+    Clouds = scrapy.Field()
+    Cloud_base = scrapy.Field()
+    Wind = scrapy.Field()
+    Humidity = scrapy.Field()
+    Temperature = scrapy.Field()
 
+class Next24Hours(scrapy.Item):
+    City_name = scrapy.Field()
+    
 
 turkey_cities_lowercase = [
     "adana",
