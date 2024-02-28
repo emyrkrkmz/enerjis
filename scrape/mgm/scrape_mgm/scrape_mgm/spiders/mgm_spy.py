@@ -16,7 +16,7 @@ class MgmSpySpider(scrapy.Spider):
     lua_script='''
         function main(splash, args)
             assert(splash:go(args.url))
-            assert(splash:wait(5))
+            assert(splash:wait(1))
             splash:set_viewport_full()
             
             
@@ -35,8 +35,12 @@ class MgmSpySpider(scrapy.Spider):
             #payload = {'api_key': SCRAPEOPS_API_KEY, 'url': city_url}
             #proxy_url = 'https://proxy.scrapeops.io/v1/?' + urlencode(payload)
             yield SplashRequest(url=city_url, callback=self.parse, 
-                            endpoint='execute', args={'wait' : 1,'lua_source': self.lua_script})
-                                                      #'proxy': proxy_url})
+                            args={
+                            'html': 1,
+                            'wait': 5,
+                            'render_all': 1
+                        },
+                    endpoint='render.json')
 
     def parse(self, response):
         
@@ -77,7 +81,7 @@ class MgmSpySpider(scrapy.Spider):
         
         sehir = Bolge()
         
-        sehir["bolge_adi"] = bolge_adi.upper()
+        sehir["bolge_adi"] = bolge_adi
         sehir["gun_adi"] = gun_adi
         sehir["c_sicaklik"] = c_temp
         sehir["tarih"] = gun_zaman
@@ -101,25 +105,8 @@ class MgmSpySpider(scrapy.Spider):
         sehir["st_ruzgar"] = st_ruzgar
         sehir["st_max_nem"] = st_max_nem
         sehir["st_min_nem"] = st_min_nem
-
-
-
+        
+        
+        
         yield sehir
-        #yield SplashRequest(url="https://www.mgm.gov.tr/tahmin/gunluk-tahmin.aspx", callback=self.parse_gunluk, 
-        #                    endpoint='execute', args={'wait' : 1,'lua_source': self.lua_script})
         
-        
-    # def parse_gunluk(self, response):
-    #     print("###############################")
-        
-    #     #sehir = response.meta["sehir"]
-    #     #bolge_adi = response.meta["city"]
-    #     #
-    #     #city = response.xpath(f'//h4[contains(text(), "{bolge_adi}")]/span')
-    #     #max_temp = city.css("span.renkMin::text").get()
-    #     #min_temp = city.xpath('span.renkMax::text').get() 
-    #     #
-    #     #sehir["max_sicaklik"] = max_temp
-    #     #sehir["min_sicaklik"] = min_temp
-        
-    #     yield "sehir"

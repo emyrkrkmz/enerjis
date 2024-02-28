@@ -1,9 +1,82 @@
-basinc,bolge_adi,c_sicaklik,ft_max_nem,ft_max_sicaklik,ft_min_nem,ft_min_sicaklik,ft_name,ft_ruzgar,gun_adi,hava_durumu,max_sicaklik,min_sicaklik,nem,ruzgar,st_max_nem,st_max_sicaklik,st_min_nem,st_min_sicaklik,st_name,st_ruzgar,tarih
-1017,Gaziantep,"8,3",70,11,43,4,Pazartesi,19,Pazar,Açık,NOT FOUND,NOT FOUND,48,0,61,11,41,3,Salı,8,26 Şubat - 01.13
-1019,Samsun,"5,6",87,15,70,6,Pazartesi,11,Pazar,Parçalı Bulutlu,NOT FOUND,NOT FOUND,80,0,88,19,49,10,Salı,18,26 Şubat - 01.13
-1018,Mersin,"14,4",74,18,60,13,Pazartesi,13,Pazar,Açık,NOT FOUND,NOT FOUND,75,2,57,20,28,14,Salı,17,26 Şubat - 01.13
-1014,Edirne,"9,4",88,19,52,8,Pazartesi,8,Pazar,Çok Bulutlu,NOT FOUND,NOT FOUND,79,3,96,17,58,6,Salı,9,26 Şubat - 01.13
-1022,Diyarbakır,5,72,12,29,-1,Pazartesi,10,Pazar,Açık,NOT FOUND,NOT FOUND,42,5,77,12,25,-2,Salı,7,26 Şubat - 01.12
-1019,Trabzon,"8,1",74,14,44,6,Pazartesi,20,Pazar,Açık,NOT FOUND,NOT FOUND,64,0,54,15,32,9,Salı,23,26 Şubat - 01.13
-1017,Kayseri,"1,6",76,14,41,0,Pazartesi,8,Pazar,Açık,NOT FOUND,NOT FOUND,67,0,75,13,39,1,Salı,6,26 Şubat - 01.13
-1015,Eskişehir,"7,8",89,14,49,2,Pazartesi,10,Pazar,Çok Bulutlu,NOT FOUND,NOT FOUND,61,5,93,14,49,2,Salı,6,26 Şubat - 01.12
+,basinc,bolge_adi,c_sicaklik,ft_max_nem,ft_max_sicaklik,ft_min_nem,ft_min_sicaklik,ft_name,ft_ruzgar,gun_adi,hava_durumu,max_sicaklik,min_sicaklik,nem,ruzgar,st_max_nem,st_max_sicaklik,st_min_nem,st_min_sicaklik,st_name,st_ruzgar,tarih
+0,1041,Ardahan,"-17,7",65,-2,34,-21,Perşembe,8,Çarşamba,Puslu,,,83,0,58,-1,29,-17,Cuma,4,28 Şubat - 23.22
+1,1025,Artvin,"5,3",49,16,21,2,Perşembe,6,Çarşamba,Açık,,,33,0,45,18,25,4,Cuma,7,28 Şubat - 23.22
+2,1022,Aydın,"12,9",76,24,43,9,Perşembe,9,Çarşamba,Açık,,,77,3,79,22,29,10,Cuma,8,28 Şubat - 23.22
+3,1022,Balıkesir,"9,4",96,21,53,4,Perşembe,5,Çarşamba,Açık,,,90,1,96,20,57,6,Cuma,6,28 Şubat - 23.22
+4,1024,Batman,"0,4",65,15,34,-1,Perşembe,5,Çarşamba,Açık,,,57,4,76,16,37,0,Cuma,5,28 Şubat - 23.22
+5,1026,Bayburt,"-2,8",53,9,19,-6,Perşembe,5,Çarşamba,Açık,,,42,4,67,11,16,-4,Cuma,6,28 Şubat - 23.22
+6,1023,Antalya,"15,7",94,20,57,12,Perşembe,10,Çarşamba,Parçalı Bulutlu,,,90,3,91,20,46,11,Cuma,14,28 Şubat - 23.22
+7,1023,Bartın,"7,3",96,18,70,6,Perşembe,7,Çarşamba,Puslu,,,100,1,94,22,50,6,Cuma,7,28 Şubat - 23.21
+8,1021,Ankara,"7,8",72,18,36,4,Perşembe,8,Çarşamba,Açık,NOT FOUND,NOT FOUND,59,2,82,18,29,4,Cuma,11,28 Şubat - 23.22
+9,1028,Ağrı,"-5,9",44,7,10,-9,Perşembe,4,Çarşamba,Puslu,,,56,4,58,10,15,-6,Cuma,4,28 Şubat - 23.22
+10,1024,Adıyaman,"7,1",74,16,43,4,Perşembe,10,Çarşamba,Puslu,,,58,0,67,15,44,6,Cuma,7,28 Şubat - 23.22
+11,1023,Aksaray,"7,1",74,17,28,2,Perşembe,10,Çarşamba,Açık,,,49,4,63,17,27,3,Cuma,11,28 Şubat - 23.22
+12,--,Adana,"10,2",88,23,42,7,Perşembe,7,Çarşamba,Az Bulutlu,,,78,2,87,23,30,7,Cuma,8,28 Şubat - 23.21
+13,1023,Amasya,"6,2",65,20,33,2,Perşembe,6,Çarşamba,Açık,,,43,4,67,20,30,3,Cuma,6,28 Şubat - 23.22
+14,1020,Afyonkarahisar,"7,5",69,17,37,3,Perşembe,9,Çarşamba,Parçalı Bulutlu,,,60,0,84,16,35,3,Cuma,11,28 Şubat - 23.22
+15,1021,Bilecik,"10,9",83,20,40,6,Perşembe,11,Çarşamba,Az Bulutlu,,,61,4,69,19,39,7,Cuma,11,28 Şubat - 23.22
+16,1025,Bingöl,"0,7",77,13,25,-2,Perşembe,10,Çarşamba,Açık,,,42,2,75,13,33,-1,Cuma,7,28 Şubat - 23.22
+17,1022,Bolu,"6,4",77,19,42,3,Perşembe,5,Çarşamba,Açık,,,72,0,85,20,34,2,Cuma,9,28 Şubat - 23.22
+18,1027,Bitlis,"-3,9",89,4,38,-8,Perşembe,10,Çarşamba,Açık,,,51,12,87,5,55,-9,Cuma,8,28 Şubat - 23.22
+19,1022,Çankırı,"6,2",85,18,44,3,Perşembe,11,Çarşamba,Açık,,,68,5,85,18,35,2,Cuma,9,28 Şubat - 23.22
+20,1023,Çanakkale,"8,9",90,20,56,9,Perşembe,9,Çarşamba,Sisli,,,100,8,94,18,44,10,Cuma,8,28 Şubat - 23.22
+21,1022,Bursa,"8,9",96,20,72,8,Perşembe,6,Çarşamba,Puslu,,,90,0,84,19,60,9,Cuma,4,28 Şubat - 23.22
+22,1019,Burdur,"10,2",87,20,45,5,Perşembe,11,Çarşamba,Çok Bulutlu,,,59,4,90,18,32,4,Cuma,22,28 Şubat - 23.22
+23,1023,Çorum,4,71,17,39,1,Perşembe,9,Çarşamba,Açık,,,54,2,67,18,35,3,Cuma,6,28 Şubat - 23.22
+24,1022,Denizli,"12,3",70,23,34,10,Perşembe,5,Çarşamba,Açık,,,63,5,71,22,32,10,Cuma,5,28 Şubat - 23.22
+25,1025,Diyarbakır,"2,9",83,15,32,-3,Perşembe,9,Çarşamba,Açık,,,49,2,77,15,40,-1,Cuma,9,28 Şubat - 23.21
+26,1023,Düzce,"8,2",93,21,49,7,Perşembe,5,Çarşamba,Puslu,,,83,0,78,23,36,8,Cuma,6,28 Şubat - 23.22
+27,1025,Erzincan,"1,9",41,13,20,-2,Perşembe,4,Çarşamba,Az Bulutlu,,,36,2,34,14,22,0,Cuma,4,28 Şubat - 23.22
+28,1024,Elazığ,"2,2",51,12,36,-1,Perşembe,4,Çarşamba,Açık,,,47,9,66,13,37,2,Cuma,5,28 Şubat - 23.22
+29,1023,Edirne,"10,2",95,18,64,6,Perşembe,8,Çarşamba,Puslu,,,73,2,91,17,61,8,Cuma,7,28 Şubat - 23.22
+30,1021,Eskişehir,"9,1",83,19,35,3,Perşembe,10,Çarşamba,Puslu,,,61,0,68,17,33,4,Cuma,14,28 Şubat - 23.21
+31,1027,Erzurum,"-5,5",29,7,9,-10,Perşembe,7,Çarşamba,Açık,,,49,0,46,9,10,-6,Cuma,8,28 Şubat - 23.21
+32,1023,Gaziantep,"6,5",72,16,42,2,Perşembe,8,Çarşamba,Açık,,,51,2,64,14,30,4,Cuma,11,28 Şubat - 23.22
+33,1027,Giresun,"7,5",85,14,55,6,Perşembe,8,Çarşamba,Açık,,,89,0,84,14,59,7,Cuma,7,28 Şubat - 23.22
+34,1025,Hakkari,"-1,5",56,7,34,-5,Perşembe,8,Çarşamba,Çok Bulutlu,,,30,12,63,8,33,-4,Cuma,5,28 Şubat - 23.22
+35,1028,Iğdır,"-1,4",46,11,20,-3,Perşembe,5,Çarşamba,Açık,,,38,0,53,11,28,-1,Cuma,4,28 Şubat - 23.22
+36,1026,Gümüşhane,"0,2",69,13,21,-4,Perşembe,5,Çarşamba,Açık,,,42,7,53,14,20,-2,Cuma,6,28 Şubat - 23.22
+37,1024,Hatay,10,59,18,37,6,Perşembe,7,Çarşamba,Açık,,,50,0,53,17,33,6,Cuma,14,28 Şubat - 23.22
+38,1023,İstanbul,"8,8",96,15,84,7,Perşembe,19,Çarşamba,Açık,,,79,11,96,15,84,7,Cuma,17,28 Şubat - 23.20
+39,1021,Isparta,"7,1",89,18,45,5,Perşembe,8,Çarşamba,Açık,,,78,0,87,16,37,4,Cuma,14,28 Şubat - 23.22
+40,1022,İzmir,"12,2",92,24,38,11,Perşembe,8,Çarşamba,Puslu,,,78,0,87,20,58,12,Cuma,9,28 Şubat - 23.21
+41,1023,Kahramanmaraş,"9,3",65,18,35,5,Perşembe,6,Çarşamba,Açık,,,47,2,60,16,40,6,Cuma,9,28 Şubat - 23.22
+42,1022,Karaman,"6,8",58,16,29,3,Perşembe,7,Çarşamba,Açık,,,50,2,70,18,19,2,Cuma,20,28 Şubat - 23.22
+43,1029,Kars,"-9,1",44,8,8,-12,Perşembe,8,Çarşamba,Açık,,,55,4,48,9,8,-10,Cuma,10,28 Şubat - 23.22
+44,1022,Kayseri,"3,3",56,16,31,0,Perşembe,8,Çarşamba,Açık,,,59,0,56,17,28,1,Cuma,7,28 Şubat - 23.22
+45,1021,Kırıkkale,8,63,18,34,5,Perşembe,5,Çarşamba,Açık,,,58,6,64,18,30,5,Cuma,5,28 Şubat - 23.22
+46,--,Karabük,"9,9",95,21,47,5,Perşembe,4,Çarşamba,Açık,,,67,0,84,20,53,4,Cuma,7,28 Şubat - 23.21
+47,1022,Kastamonu,"3,1",80,18,39,1,Perşembe,7,Çarşamba,Açık,,,79,1,82,19,47,2,Cuma,7,28 Şubat - 23.22
+48,1022,Kırşehir,"4,1",57,16,40,3,Perşembe,5,Çarşamba,Açık,,,59,7,59,17,31,2,Cuma,6,28 Şubat - 23.22
+49,1022,Kırklareli,"10,7",85,18,66,6,Perşembe,9,Çarşamba,Açık,,,61,9,89,16,64,7,Cuma,9,28 Şubat - 23.21
+50,1022,Kocaeli,"9,9",94,20,61,8,Perşembe,9,Çarşamba,Az Bulutlu,,,90,10,90,21,48,9,Cuma,6,28 Şubat - 23.21
+51,1024,Kilis,"8,8",67,18,36,5,Perşembe,8,Çarşamba,Puslu,,,40,0,60,17,28,5,Cuma,13,28 Şubat - 23.22
+52,1023,Konya,"6,9",70,16,27,3,Perşembe,6,Çarşamba,Çok Bulutlu,,,51,3,48,17,27,5,Cuma,9,28 Şubat - 23.22
+53,1024,Manisa,12,82,23,55,10,Perşembe,5,Çarşamba,Açık,,,74,1,78,20,55,12,Cuma,4,28 Şubat - 23.22
+54,1024,Malatya,"5,2",48,14,35,-1,Perşembe,5,Çarşamba,Açık,,,31,0,77,14,38,2,Cuma,7,28 Şubat - 23.22
+55,1020,Kütahya,"7,9",68,17,35,4,Perşembe,7,Çarşamba,Çok Bulutlu,,,72,0,72,17,41,2,Cuma,8,28 Şubat - 23.22
+56,1023,Mersin,"13,6",75,21,44,11,Perşembe,9,Çarşamba,Açık,,,69,5,79,23,35,11,Cuma,11,28 Şubat - 23.22
+57,1023,Mardin,"5,7",66,13,32,1,Perşembe,12,Çarşamba,Açık,,,19,28,74,12,36,1,Cuma,9,28 Şubat - 23.22
+58,1028,Muş,"-0,9",47,8,27,-2,Perşembe,4,Çarşamba,Açık,,,54,4,73,10,36,0,Cuma,4,28 Şubat - 23.22
+59,1022,Muğla,"7,7",89,19,46,6,Perşembe,14,Çarşamba,Açık,,,93,0,81,18,35,7,Cuma,15,28 Şubat - 23.22
+60,1022,Niğde,"4,2",59,16,27,1,Perşembe,8,Çarşamba,Yağmurlu,,,50,10,53,18,24,3,Cuma,12,28 Şubat - 23.22
+61,1023,Nevşehir,"5,9",59,14,25,3,Perşembe,9,Çarşamba,Açık,,,48,5,64,17,22,1,Cuma,11,28 Şubat - 23.22
+62,1026,Ordu,"5,9",92,14,64,4,Perşembe,9,Çarşamba,Puslu,,,85,6,92,15,72,5,Cuma,9,28 Şubat - 23.22
+63,1026,Rize,"6,1",81,13,52,5,Perşembe,6,Çarşamba,Açık,,,90,3,86,15,47,5,Cuma,9,28 Şubat - 23.22
+64,1023,Sakarya,"7,4",96,19,67,8,Perşembe,7,Çarşamba,Puslu,,,99,5,96,23,39,9,Cuma,8,28 Şubat - 23.22
+65,1023,Osmaniye,"9,2",67,22,42,8,Perşembe,5,Çarşamba,Açık,,,60,4,67,23,34,6,Cuma,8,28 Şubat - 23.22
+66,1026,Samsun,"4,9",89,13,61,5,Perşembe,7,Çarşamba,Açık,,,75,4,88,14,65,6,Cuma,9,28 Şubat - 23.22
+67,1024,Şanlıurfa,"8,4",73,17,35,5,Perşembe,10,Çarşamba,Açık,,,44,5,73,16,33,7,Cuma,8,28 Şubat - 23.22
+68,1026,Sinop,"9,1",96,13,84,7,Perşembe,20,Çarşamba,Açık,,,83,8,93,13,85,8,Cuma,28,28 Şubat - 23.22
+69,1024,Şırnak,"2,7",56,11,27,1,Perşembe,9,Çarşamba,Açık,,,14,4,76,12,38,2,Cuma,8,28 Şubat - 23.22
+70,1023,Siirt,"5,3",74,14,35,0,Perşembe,7,Çarşamba,Açık,,,18,8,83,14,36,1,Cuma,5,28 Şubat - 23.22
+71,1024,Sivas,"0,5",62,13,28,0,Perşembe,5,Çarşamba,Az Bulutlu,,,52,1,73,15,25,-1,Cuma,8,28 Şubat - 23.22
+72,1024,Tokat,"5,9",64,18,27,2,Perşembe,6,Çarşamba,Açık,,,45,8,69,19,27,1,Cuma,6,28 Şubat - 23.22
+73,1023,Tekirdağ,"6,4",96,11,86,6,Perşembe,9,Çarşamba,Sisli,,,94,0,96,13,82,7,Cuma,6,28 Şubat - 23.22
+74,1024,Tunceli,"1,6",66,14,30,-3,Perşembe,4,Çarşamba,Açık,,,50,3,69,15,36,-1,Cuma,5,28 Şubat - 23.22
+75,1025,Trabzon,"5,8",85,14,63,6,Perşembe,10,Çarşamba,Açık,,,82,1,85,15,56,7,Cuma,11,28 Şubat - 23.22
+76,1029,Van,"-5,5",61,5,25,-9,Perşembe,10,Çarşamba,Açık,,,38,1,67,6,32,-6,Cuma,10,28 Şubat - 23.22
+77,1020,Uşak,"8,4",66,18,40,6,Perşembe,8,Çarşamba,Açık,,,64,0,72,17,33,5,Cuma,12,28 Şubat - 23.22
+78,1024,Yalova,9,96,15,87,9,Perşembe,6,Çarşamba,Puslu,,,94,3,96,15,75,9,Cuma,9,28 Şubat - 23.22
+79,1024,Zonguldak,"6,1",96,11,85,7,Perşembe,10,Çarşamba,Sisli,,,100,1,87,18,58,9,Cuma,14,28 Şubat - 23.22
+80,1022,Yozgat,"2,6",64,14,45,2,Perşembe,6,Çarşamba,Açık,,,58,6,58,15,29,3,Cuma,7,28 Şubat - 23.22
