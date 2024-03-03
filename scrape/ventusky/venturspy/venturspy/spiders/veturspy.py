@@ -12,7 +12,7 @@ class VeturspySpider(scrapy.Spider):
     lua_script='''
         function main(splash, args)
             assert(splash:go(args.url))
-            assert(splash:wait(5))
+            assert(splash:wait(2))
             splash:set_viewport_full()
             return {
               html = splash:html()
@@ -80,10 +80,5 @@ class VeturspySpider(scrapy.Spider):
         ##Second part
         product = response.css("div.section_grey table")
         
-        
-                
-        
-
-
         
         yield city
